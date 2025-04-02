@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataWizard - Data Upload</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <div class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <img src="your-logo.png" alt="DataWizard Logo" class="h-8">
+                    <h1 class="text-xl font-semibold text-gray-800">DataWizard</h1>
+                </div>
+                <nav class="space-x-8 text-gray-800">
+                    <a href="#" class="hover:text-green-500">Dashboard</a>
+                    <a href="#" class="text-green-500 font-semibold">Data Upload</a>
+                    <a href="#" class="hover:text-green-500">Data Cleaning & Analysis</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto p-6">
+        <!-- Upload Section -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Upload Your Data Files</h2>
+
+            <!-- Progress Bars -->
+            <div class="mb-4">
+                <div class="mb-2 flex justify-between">
+                    <span>data1.csv</span>
+                    <span class="text-green-500">Uploading...</span>
+                </div>
+                <div class="h-2 bg-green-500 rounded"></div>
+            </div>
+
+            <div class="mb-4">
+                <div class="mb-2 flex justify-between">
+                    <span>data2.xlsx</span>
+                    <span class="text-green-500">Uploading...</span>
+                </div>
+                <div class="h-2 bg-green-500 bg-opacity-50 rounded"></div>
+            </div>
+
+            <div class="mb-4">
+                <div class="mb-2 flex justify-between">
+                    <span>data3.csv</span>
+                    <span class="text-red-500">Error</span>
+                </div>
+                <div class="h-2 bg-red-500 rounded"></div>
+                <p class="text-red-500 text-sm mt-2">Failed to upload. Please try again.</p>
+            </div>
+        </div>
+
+        <!-- Preview Section -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Preview Your Data</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="space-y-2">
+                    <h3 class="font-medium text-gray-800">Column 1</h3>
+                    <p class="text-gray-600">Data 1</p>
+                    <p class="text-gray-600">Data 4</p>
+                    <p class="text-gray-600">Data 7</p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="font-medium text-gray-800">Column 2</h3>
+                    <p class="text-gray-600">Data 2</p>
+                    <p class="text-gray-600">Data 5</p>
+                    <p class="text-gray-600">Data 8</p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="font-medium text-gray-800">Column 3</h3>
+                    <p class="text-gray-600">Data 3</p>
+                    <p class="text-gray-600">Data 6</p>
+                    <p class="text-gray-600">Data 9</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
